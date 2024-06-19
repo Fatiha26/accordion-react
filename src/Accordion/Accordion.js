@@ -7,13 +7,15 @@ import MyAccordion from './MyAccordion';
     const [data, setData] = useState(questions);
     return(
         <>
-            <section className="main_div">
-            <h1>Q/A</h1>
+           <div className="main_div">
+           <section className="center_div">
+            <h1>Q/A on ReactJS</h1>
             {data.map((curElem) => {
                 const {id} = curElem;
                 return <MyAccordion key={ id} {...curElem} />
             })}
             </section>
+           </div>
         </>
     )
  } 
